@@ -1,0 +1,84 @@
+/* 
+Fargelegger alle p-elementer med fargen rød. 
+p {
+    color: red;
+  }
+*/
+/*Endrer flere egenskaper til p-elementet ved å sette egenskapenes verdier*/
+/*
+  p {
+    color: red; /*Fargelegger all tekst i p-elementene til rødt
+    width: 500px; /*Lager en maks bredde på p-elementene til 500 pixler
+    border: 1px solid black;/*Setter en sort, heltrukken strek som ramme rundt alle p-elementene
+  }
+*/
+
+/*Fargelegger flere elementer rødt, p-, li- og h1-, elementene 
+  p,
+  li,
+  h1 {
+    color: red;
+  }
+*/
+/*
+  p,
+li,
+h1 {
+    color: darkred;
+    color: red;
+    width: 500px;
+    border: 1px solid black;
+}
+
+ul {
+    color: green;
+}
+*/
+
+html {
+  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high (Setter all tekst i html dokumentet til størrelse 10px */
+  font-family: "Times New Roman", sans-serif; /* this should be the rest of the output you got from Google Fonts (Bestemmer font familie)*/
+}
+
+h1 { /*Endrer alle h1 til tekststørrelse 60px og sentrerer teksten på skjermen.*/
+  font-size: 60px;
+  text-align: center;
+}
+
+p,
+li { /*Alle p- og li- elementene skal være størrelse 16px, ha en linjehøyde på 2 og bokstavavstand på 1px.*/
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+html { /*Endrer bakgrunnsfargen på websiden*/
+  background-color: #3fbfbf;
+}
+
+body { 
+  width: 600px; /*Setter først bredden av body elementet. */
+  margin: 0 auto; /*Setter margen til 0*/
+  background-color: #ff9500; /* Velger bakgrunnsfarge for bodyelementet til oransj*/
+  padding: 0px 20px 20px 20px; /*Velger padding på topp til og 20px venstre, bunn og høyre. Velger man to verdier bare så er første verdi for topp og bunn og andre verdi for sidene.*/
+  border: 5px solid black; /*Setter en solid strek rundt hele bodyen på 5px og gir den fargen svart.*/
+}
+
+h1 {
+  margin: 0; /*Tvinger nettleser til å kjøre med null margin på alle h1 elementene.*/
+  padding: 20px 0; /*Setter padding rundt h1 elementene til 20px topp og bunn og 0 til høyre og venstre. */
+  color: #00539f; /*Velger farge på h1 elementene. */
+  text-shadow: 3px 3px 1px black; /*Gir overskrifta en skygge, eller alle h1 elementene.
+  Første verdi: horizontal-offset eller forskyvelde av skyggen
+  Andre verdi: vertical-offset eller vertikal forskyvelse av skyggen
+  Tredje verdi: hvor mye av skyggen skal være blurry for indikering fra skyggelagt området til ikke. 
+  Fjerde verdi: Setter fargen på skyggen.  */
+}
+
+img { /*Sentrerer mozilla bilde på skjermen*/
+  display: block; /*Bilde er et inline element i motsettning til body-elementet som er en block. For at dette skal virke må
+  img-elementet oppføre seg som et body-element. Derfor setter vi display til block. Altså at bilde skal vises som block med samme egenskapene som et body-element.*/
+  margin: 0 auto; /*Her bruker vi null marg til topp og bunn av bilde og auto på fordeling på høyre og venstre. Da sentreres bilde.*/
+  width: 256px; /* Dette setter bredden på bilde manuelt, fordi bilde to er mye større */
+  height: 256px; /* Dette setter høyden på bilde manuelt, fordi bilde to er mye større */
+}
